@@ -5,5 +5,5 @@ def add_tuple(tuple_a=(), tuple_b=()):
     while len(list_a) < 2:
         list_a.append(0)
     while len(list_b) < 2:
-        list_a.append(0)
+        list_b.append(0)
     return tuple([list_a[0] + list_b[0], list_a[1] + list_b[1]])
