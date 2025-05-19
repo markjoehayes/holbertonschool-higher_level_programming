@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 The ``4-print_square`` module
 ============================
 
