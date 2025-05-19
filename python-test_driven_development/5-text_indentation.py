@@ -1,58 +1,36 @@
 #!/usr/bin/python3
-The ``4-print_square`` module
-============================
+"""
 
-Using ``print_square``
----------------------
+Module composed by a function that prints 2 new lines after ".?:" characters
 
-Importing function from the module:
+"""
 
-    >>> print_square = __import__('4-print_square').print_square
 
-Printing a square with a size of 5
+def text_indentation(text):
+    """ Function that prints 2 new lines after ".?:" characters
 
-    >>> print_square(5)
-    #####
-    #####
-    #####
-    #####
-    #####
+    Args:
+        text: input string
 
-Passing 0 as the size of the square
+    Returns:
+        No return
 
-    >>> print_square(0)
+    Raises:
+        TypeError: If text is not a string
 
-Passing a float number as the size of the square
 
-    >>> print_square(1.0)
-    Traceback (most recent call last):
-    	      ...
-    TypeError: size must be an integer
+    """
 
-Passing a string as the size of the square
+    if type(text) is not str:
+        raise TypeError("text must be a string")
 
-    >>> print_square('2')
-    Traceback (most recent call last):
-    	      ...
-    TypeError: size must be an integer
+    s = text[:]
 
-Passing a negative number as the size of the square
+    for d in ".?:":
+        list_text = s.split(d)
+        s = ""
+        for i in list_text:
+            i = i.strip(" ")
+            s = i + d if s is "" else s + "\n\n" + i + d
 
-    >>> print_square(-2)
-    Traceback (most recent call last):
-    	     ...
-    ValueError: size must be >= 0
-
-Passing None as the size of the square
-
-    >>> print_square(None)
-    Traceback (most recent call last):
-    	      ...
-    TypeError: size must be an integer
-
-Missing argument
-
-   >>> print_square()
-   Traceback (most recent call last):
-   	     ...
-   TypeError: print_square() missing 1 required positional argument: 'size'
+    print(s[:-3], end="")
