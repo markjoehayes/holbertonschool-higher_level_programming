@@ -8,7 +8,7 @@ class Square:
         """initialize the data"""
 
         self.size = size
-        self.positon = position
+        self.position = position
 
     @property
     def size(self):
