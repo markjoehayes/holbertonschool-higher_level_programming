@@ -20,8 +20,7 @@ class Rectangle:
             raise TypeError('width must be an integer')
         elif value < 0:
             raise ValueError('width must be >= 0')
-        else:
-            self.__width = value
+        self.__width = value
 
     @property
     def height(self):
@@ -34,8 +33,7 @@ class Rectangle:
             raise TypeError('height must be an integer')
         elif value < 0:
             raise ValueError('height must be >= 0')
-        else:
-            self.__height = value
+        self.__height = value
 
     def perimeter(self):
         """calculate the perimeter of the rectangle"""
