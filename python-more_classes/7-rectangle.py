@@ -53,14 +53,14 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             print()
         for i in range(self.__height):
-            print("#" * self.__width)
+            print(str(self.print_symbol) * self.__width)
 
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
             return ""
         rect = []
         for i in range(self.__height):
-            rect.append("#" * self.__width)
+            rect.append(str(self.print_symbol) * self.__width)
         return "\n".join(rect)
 
     def __repr__(self):
