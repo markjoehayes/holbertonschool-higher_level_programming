@@ -1,11 +1,9 @@
-Test cases for MyList class:
-
-    >>> MyList = __import__('1-my_list').MyList
-    >>> lst = MyList()
-    >>> lst.append(4)
-    >>> lst.append(2)
-    >>> lst.append(5)
-    >>> lst.print_sorted()
-    [2, 4, 5]
-    >>> print(lst)
-    [4, 2, 5]
+>>> MyList = __import__('1-my_list').MyList
+>>> lst = MyList()
+>>> lst.append(4)
+>>> lst.append(2)
+>>> lst.append(5)
+>>> lst.print_sorted()
+[2, 4, 5]
+>>> print(lst)
+[4, 2, 5]
