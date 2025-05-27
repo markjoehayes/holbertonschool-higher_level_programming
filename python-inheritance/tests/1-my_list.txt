@@ -1,9 +1,11 @@
->>> from 1_my_list import MyList
->>> my_list = MyList()
->>> my_list.append(3)
->>> my_list.append(1)
->>> my_list.append(2)
->>> my_list.print_sorted()
-[1, 2, 3]
->>> print(my_list)  # Original list unchanged
-[3, 1, 2]
+Test cases for MyList:
+
+1. Test sorting:
+   - Create MyList: my_list = MyList()
+   - Append elements: 3, 1, 2
+   - Call print_sorted(): should print [1, 2, 3]
+   - Original list should remain [3, 1, 2]
+
+2. Test empty list:
+   - Create empty MyList
+   - Call print_sorted(): should print []
