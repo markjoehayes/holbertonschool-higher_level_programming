@@ -1,9 +1,11 @@
+Basic tests for MyList class:
+
 >>> MyList = __import__('1-my_list').MyList
->>> lst = MyList()
->>> lst.append(4)
->>> lst.append(2)
->>> lst.append(5)
->>> lst.print_sorted()
-[2, 4, 5]
->>> print(lst)
-[4, 2, 5]
+>>> my_list = MyList()
+>>> my_list.append(3)
+>>> my_list.append(1)
+>>> my_list.append(2)
+>>> my_list.print_sorted()
+[1, 2, 3]
+>>> print(my_list)
+[3, 1, 2]
