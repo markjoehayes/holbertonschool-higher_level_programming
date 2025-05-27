@@ -1,11 +1,2 @@
-Test cases for MyList:
-
-1. Test sorting:
-   - Create MyList: my_list = MyList()
-   - Append elements: 3, 1, 2
-   - Call print_sorted(): should print [1, 2, 3]
-   - Original list should remain [3, 1, 2]
-
-2. Test empty list:
-   - Create empty MyList
-   - Call print_sorted(): should print []
+#!/usr/bin/bash
+python3 -m doctest tests/1-my_list.txt -v
