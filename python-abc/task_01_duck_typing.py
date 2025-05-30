@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-from abc import abc, abstractmethod
+from abc import ABC, abstractmethod
+import math
 
 
 class Shape(ABC):
@@ -13,15 +14,16 @@ class Shape(ABC):
     @abstractmethod
     def perimeter(self):
         """Abstract method for defininf the area of a shape"""
+        pass
 
 class Circle(Shape):
     """A class Shape inherited from Shape"""
 
     def __init__(self, radius):
         """initialize the circle with a radius"""
-        self.__radius = abc(radius)
+        self.__radius = abs(radius)
 
-    def area(self)
+    def area(self):
         """Calculate the area of a circle"""
         return math.pi * (self.__radius ** 2)
 
@@ -34,8 +36,8 @@ class Rectangle(Shape):
 
     def __init__(self, height, width):
         """initialize the rectangle with height and width"""
-        self.__height = abc(height)
-        self.__width = abc(width)
+        self.__height = height
+        self.__width = width
 
     def area(self):
         """Calculate the area of a rectangle"""
@@ -50,7 +52,7 @@ def shape_info(shape):
     print(f"Area: {shape.area()}")
     print(f"Perimeter: {shape.perimeter()}")
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     circle = Circle(radius=5)
     rectangle = Rectangle(width=4, height=7)
 
