@@ -3,7 +3,7 @@
 class CountedIterator:
     """An iterator that keeps track of the number of items iterated over."""
 
-    def__init__(self, iterable):
+    def __init__(self, iterable):
         """Initialize the iterator and counter."""
         self.iterator = iter(iterable)
         self.count = 0
