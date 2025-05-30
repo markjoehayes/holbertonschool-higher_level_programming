@@ -31,7 +31,11 @@ class FlyingFish(Fish, Bird):
 
     def swim(self):
         """Prints a message indicating the flying fish are swiming"""
-        print("The flying fish lives both in water and the sky!")
+        print("The flying fish is swimming!")
+
+    def habitat(self):
+        """Prints a message indicating the flying fish's habitat'"""
+        print("The flying fish lives both in the water and the sky!")
 
     if __name__ == "__main__":
         flying_fish = FlyingFish()
