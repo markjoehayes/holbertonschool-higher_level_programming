@@ -3,7 +3,7 @@ class SwimMixin:
     """A mixin to help design a creature that swims"""
     def swim(self):
         """Show the creature swimming"""
-        print("The ctreature swims!")
+        print("The creature swims!")
 
 class FlyMixin:
     """A mixin to help the creature fly"""
