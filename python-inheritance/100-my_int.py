@@ -7,8 +7,8 @@ class MyInt(int):
     def __equal__(self, value):
         """Change == to !="""
         if isinstance(self, type(value)):
-            return True
+            return False
     def __notequal__(self, value):
         """Change != to =="""
         if isinstance(self, type(value)):
-            return False
+            return True
