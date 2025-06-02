@@ -8,6 +8,7 @@ class MyInt(int):
         """Change == to !="""
         if isinstance(self, type(value)):
             return False
+
     def __ne__(self, value):
         """Change != to =="""
         if isinstance(self, type(value)):
