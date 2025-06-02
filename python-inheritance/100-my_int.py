@@ -4,11 +4,11 @@
 
 class MyInt(int):
     """A Class MyInt, a rebel integer"""
-    def __equal__(self, value):
+    def __eq__(self, value):
         """Change == to !="""
         if isinstance(self, type(value)):
             return False
-    def __notequal__(self, value):
+    def __ne__(self, value):
         """Change != to =="""
         if isinstance(self, type(value)):
             return True
