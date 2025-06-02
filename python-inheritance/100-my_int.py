@@ -6,7 +6,9 @@ class MyInt(int):
     """A Class MyInt, a rebel integer"""
     def __equal__(self, value):
         """Change == to !="""
-        return self.real != value
+        if isinstance(self, type(value)):
+            return False
     def __notequal__(self, value):
         """Change != to =="""
-        return self.real == value
+        if isinstance(self, type(value)):
+            return True
