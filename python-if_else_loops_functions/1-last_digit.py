@@ -2,7 +2,6 @@
 import random
 number = random.randint(-10000, 10000)
 # YOUR CODE HERE
-print(number)
 last_digit = abs(number) % 10
 if (number < 0):
     last_digit = -(last_digit)
