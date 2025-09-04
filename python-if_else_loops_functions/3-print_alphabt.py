@@ -4,5 +4,4 @@ for i in range(97, 123):
         continue
     elif(i == 113):
         continue
-    end_char = "\n" if i == 122 else ""
-    print("{}".format(chr(i)), end=end_char)
+    print("{}".format(chr(i)))
