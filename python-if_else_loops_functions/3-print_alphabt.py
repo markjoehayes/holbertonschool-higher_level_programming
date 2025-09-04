@@ -4,4 +4,4 @@ for i in range(97, 123):
         continue
     elif(i == 113):
         continue
-    print("{}".format(chr(i)))
+    print("{}".format(chr(i)), end="")
