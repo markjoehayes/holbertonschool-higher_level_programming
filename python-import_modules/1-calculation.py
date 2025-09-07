@@ -2,7 +2,7 @@
 from calculator_1 import add, sub, mul, div
 
 if __name__ == "__main__":
-    """prints the results of basice calculations"""
+    """displays the results of basic calculations"""
 
     a = 10
     b = 5
