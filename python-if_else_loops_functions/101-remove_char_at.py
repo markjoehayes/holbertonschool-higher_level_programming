@@ -2,5 +2,7 @@
 def remove_char_at(str, n):
     new_str = ""
     for i in str:
-        new_str += (str[:n]) + (str[n+1:])
+        new_str += (str[:n]).join(str[n+1:])
     return new_str
+
+print(remove_char_at("chicago", 2))
