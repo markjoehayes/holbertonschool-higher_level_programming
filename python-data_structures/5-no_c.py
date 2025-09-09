@@ -4,5 +4,5 @@ def no_c(my_string):
     for letter in my_string:
         if (letter == 'c' or letter == 'C'):
             continue
-        new_string.append(letter)
+        new_string += letter
     return new_string
