@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 def safe_print_integer(value):
-    """Print the value if it is an integer"""
+    """Print the value if it is an integea, returns False otherwiser"""
     try:
-        print("{:d}.format(value)")
+        print("{:d}".format(value))
     except ValueError:
         return False
     return True
