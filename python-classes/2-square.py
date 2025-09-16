@@ -5,9 +5,9 @@
 class Square:
     """A class that defines a square"""
 
-    def __init__(self, size):
+    def __init__(self, size=0):
         """Sets the necessary attributes for the Square object"""
-        if type(size) id int:
+        if type(size) is int:
             if size >= 0:
                 self.__size = size
             else:
