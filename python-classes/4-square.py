@@ -7,13 +7,7 @@ class Square:
 
     def __init__(self, size=0):
         """Sets the necessary attributes for the Square object"""
-        if type(size) is int:
-            if size >= 0:
-                self.__size = size
-            else:
-                raise ValueError("size must be >= 0")
-        else:
-            raise TypeError("size must be an integer")
+        self.size = size
 
     def area(self):
         """Retuns the current square area"""
@@ -28,7 +22,7 @@ class Square:
     def size(self, value):
         """Setter for size with validation"""
         if not isinstance(value, int):
-            raise TypeError("Size must be an integer")
+            raise TypeError("size must be an integer")
         if value < 0:
-            raise ValueError("Size must be >= 0")
+            raise ValueError("size must be >= 0")
         self.__size = value
