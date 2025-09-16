@@ -1,5 +1,5 @@
 #!/uar/bin/python3
-"""A program to define a Square"""
+"""A module to define a Square"""
 
 
 class Square:
