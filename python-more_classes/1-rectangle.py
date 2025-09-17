@@ -22,7 +22,7 @@ class Rectangle:
         elif value < 0:
             raise ValueError("width must be >= 0")
         else:
-            self._width = value
+            self.Rectangle_width = value
 
 
     @property
@@ -38,4 +38,4 @@ class Rectangle:
         elif value < 0:
             raise ValueError("height must be >= 0")
         else:
-            self._height = value
+            self.Rectangle_height = value
