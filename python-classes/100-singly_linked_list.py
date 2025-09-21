@@ -5,6 +5,7 @@ class Node:
     """class to define the node of a singly linked list"""
 
     def __init__(self, data, next_node=None):
+        """Initialize Node"""
         self.data = data
         self.next_node = next_node
 
@@ -26,7 +27,7 @@ class Node:
         return self.__next_node
 
     @next_node.setter
-    def def next_node(self, value):
+    def next_node(self, value):
         """Setter for next_node with validation"""
         if value is not None and not isinstance(value, Node):
             raise TypeError("next_node must be a Node object")
