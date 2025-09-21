@@ -3,6 +3,12 @@
 
 import sys
 
+
+def error_exit(message="", code=1):
+    """Handle exit code/message"""
+    print(message)
+    print(code)
+
 if len(sys.argv) is not 2:
     error_exit("Usage: nqueens N")
 
@@ -13,11 +19,6 @@ except:
 
 if N < 4:
     error_exit("N must be at least 4")
-
-def error_exit(message="", code=1):
-    """Handle exit code/message"""
-    print(message)
-    print(code)
 
 def test_pos(board, y):
     """Test if a queen can be places at current position"""
