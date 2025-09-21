@@ -3,6 +3,17 @@
 
 import sys
 
+if len(sys.argv) is not 2:
+    error_exit("Usage: nqueens N")
+
+try:
+    N = int(sys.argv[1])
+except:
+    error_exit("N must be a number")
+
+if N < 4:
+    error_exit("N must be at least 4")
+
 def error_exit(message="", code=1):
     """Handle exit code/message"""
     print(message)
@@ -26,17 +37,6 @@ def ref_backtrack(board, y):
             board[y][1] = x
             if test_pos(board, y):
                 rec_backtrack(board, y + 1)
-
-if len(sys.argv) is not 2:
-    error_exit("Usage: nqueens N")
-
-try:
-    N = int(sys.argv[1])
-except:
-    error_exit("N must be a number")
-
-if N < 4:
-    error_exit("N must be at least 4")
 
 board = [[y, 0] for y in range(N)]
 rec_backtrack(board, 0)
