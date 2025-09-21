@@ -5,7 +5,7 @@
 class Square:
     """A class that defines a square"""
 
-    def __init__(self, size=0, position=(0,0)):
+    def __init__(self, size=0, position=(0, 0)):
         """Sets the necessary attributes for the Square object"""
         self.size = size
         self.position = position
@@ -36,7 +36,7 @@ class Square:
     @position.setter
     def position(self, value):
         """Setter for the position with validation"""
-        if (not isinstance(value, tuple) or len(value) != 2 or\
+        if (not isinstance(value, tuple) or len(value) != 2 or
                 not all(isinstance(num, int) for num in value) or
                 not all(num >= 0 for num in value)):
             raise TypeError("position must be a tuple of 2 positive integers")
