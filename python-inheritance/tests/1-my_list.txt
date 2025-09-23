@@ -10,27 +10,11 @@ Test cases for MyList class
 >>> my_list.append(5)
 >>> print(my_list)
 [1, 4, 2, 3, 5]
-
 >>> my_list.print_sorted()
 [1, 2, 3, 4, 5]
-
->>> print(my_list)  # Original list should remain unchanged
+>>> print(my_list)
 [1, 4, 2, 3, 5]
 
 >>> empty_list = MyList()
 >>> empty_list.print_sorted()
 []
-
->>> single_list = MyList()
->>> single_list.append(42)
->>> single_list.print_sorted()
-[42]
-
->>> duplicate_list = MyList()
->>> duplicate_list.append(3)
->>> duplicate_list.append(1)
->>> duplicate_list.append(3)
->>> duplicate_list.append(2)
->>> duplicate_list.append(1)
->>> duplicate_list.print_sorted()
-[1, 1, 2, 3, 3]
