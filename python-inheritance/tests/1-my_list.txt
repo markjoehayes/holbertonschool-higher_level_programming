@@ -1,4 +1,4 @@
-Test cases for MyList class
+Test the MyList class
 
 >>> MyList = __import__('1-my_list').MyList
 
@@ -15,6 +15,7 @@ Test cases for MyList class
 >>> print(my_list)
 [1, 4, 2, 3, 5]
 
+# Test with empty list
 >>> empty_list = MyList()
 >>> empty_list.print_sorted()
 []
