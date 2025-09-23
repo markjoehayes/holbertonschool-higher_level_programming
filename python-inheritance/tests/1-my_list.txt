@@ -1,6 +1,7 @@
 Test cases for MyList class
 
-Create a MyList object and test print_sorted method:
+>>> MyList = __import__('1-my_list').MyList
+
 >>> my_list = MyList()
 >>> my_list.append(1)
 >>> my_list.append(4)
@@ -9,23 +10,22 @@ Create a MyList object and test print_sorted method:
 >>> my_list.append(5)
 >>> print(my_list)
 [1, 4, 2, 3, 5]
+
 >>> my_list.print_sorted()
 [1, 2, 3, 4, 5]
+
 >>> print(my_list)  # Original list should remain unchanged
 [1, 4, 2, 3, 5]
 
-Test with empty list:
 >>> empty_list = MyList()
 >>> empty_list.print_sorted()
 []
 
-Test with single element:
 >>> single_list = MyList()
 >>> single_list.append(42)
 >>> single_list.print_sorted()
 [42]
 
-Test with duplicate elements:
 >>> duplicate_list = MyList()
 >>> duplicate_list.append(3)
 >>> duplicate_list.append(1)
