@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""
-Module to check if object is an instance of a class that inherited
-from a specified class, otherwise flase
-"""
+"""Module to check if object is instance of a subclass, but not he class"""
 
 
 def inherits_from(obj, a_class):
