@@ -26,19 +26,19 @@ class Circle(Shape):
 
     def perimeter(self):
         """returns the circle's perimeter'"""
-        return 2 8 (3.14 * radius)
+        return 2 * (3.14 * radius)
 
 class Rectangle(Shape):
     """class to define a Rectangle"""
-    def __init__(self, length, width):
+    def __init__(self, width, height):
         """initialize a new Rectangle"""
-        self.length = length
-        self.width = width
+        self.length = width
+        self.width = height
 
     def area(self):
         """returns the area of a rectangle"""
-        return length * width
+        return width * height
 
     def perimeter(self):
         """returns the perimeter of the Rectangle"""
-        return 2 * (length + width)
+        return 2 * (width + height)
