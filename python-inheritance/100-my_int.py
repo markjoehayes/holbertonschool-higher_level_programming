@@ -4,7 +4,7 @@
 
 class MyInt(int):
     """defines a rebel integer class called MyInt"""
-    
+
     def __eq__(self, value):
         """exchange == operator with != operator"""
         return self.real != value
