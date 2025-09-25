@@ -32,8 +32,8 @@ class Rectangle(Shape):
     """class to define a Rectangle"""
     def __init__(self, width, height):
         """initialize a new Rectangle"""
-        self.length = width
-        self.width = height
+        self.width = width
+        self.height = height
 
     def area(self):
         """returns the area of a rectangle"""
@@ -42,3 +42,9 @@ class Rectangle(Shape):
     def perimeter(self):
         """returns the perimeter of the Rectangle"""
         return 2 * (self.width + self.height)
+
+def shape_info(shape):
+    """Prints the area and perimeter of any shape object"""
+    print(f"Area: {shape.area()}")
+    print(f"Perimeter: {shape.perimeter()}")
+
