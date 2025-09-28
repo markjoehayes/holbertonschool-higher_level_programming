@@ -42,4 +42,38 @@ flying_fish.habitat()
 print(FlyingFish.mro())
 print(FlyingFish.__mro__)
 
+class TestFlyingFish(Fish, Bird):
+    pass
+
+test_fish = TestFlyingFish()
+print("Without overriding habitat():")
+test_fish.habitat()
+
+
+class ReverseFlyingFish(Bird, Fish):
+    pass
+
+reverse_fish = ReverseFlyingFish()
+print("With reverse inheritance order (Bird, Fish):")
+reverse_fish.habitat()
+
+class SmartFlyingFish(Fish, Bird):
+    def fly(self):
+        print("The flying fish is soaring!")
+
+    def swim(self):
+        super().swim()
+        print("...and it's doing it gracefully!")
+
+    def habitat(self):
+        print("The flying fish lives in both water and the sky!")
+
+    def show_parent_habitats(self):
+        print("Parent habitats:")
+        Fish.habitat(self)
+        Bird.habitat(self)
+
+smart_fish = SmartFlyingFish()
+smart_fish.swim()
+smart_fish.show_parent_habitats()
 
