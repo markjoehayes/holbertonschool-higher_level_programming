@@ -1,0 +1,27 @@
+cat: file_append.txt: No such file or directory
+T
+h
+i
+s
+ 
+S
+c
+h
+o
+o
+l
+ 
+i
+s
+ 
+s
+o
+ 
+c
+o
+o
+l
+!
+
+
+This School is so cool!
