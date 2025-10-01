@@ -3,6 +3,7 @@
 
 
 def append_write(filename="", text=""):
+    """count chars on appended text"""
     with open(filename, 'a', encoding='utf-8') as file:
         file.write('\n'.join(text) + '\n')
         chars_written = file.write(text)
