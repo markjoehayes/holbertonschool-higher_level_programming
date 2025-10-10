@@ -1,0 +1,47 @@
+1. Differentiating HTTP and HTTPS:
+----------------------------------
+
+HTTP stands for hypertext transfer protocol. It is a protocol for transferring data over a network.  There are two kinds of HTTP messages: requests and response.
+
+HTTP is sent over plaintext and HTPS encripts the messages with TLS/SLS encryption.
+
+****SEE WS FILE showing the difference between httpforever.com and google.com****
+
+
+2. Understanding HTTP Structure:
+--------------------------------
+
+I am not sure what I am supposed to copy - when I click on inspect and reload undeer the network tab - it lists a bunch of methods (mostly GET).
+
+In exploring the header tab of the first request:
+    Accept
+	application/font-woff2;q=1.0,application/font-woff;q=0.9,*/*;q=0.8
+Accept-Encoding
+	identity
+Accept-Language
+	en-US,en;q=0.5
+Connection
+	keep-alive
+Cookie
+	cf_clearance=kZBfq9cx9IqCv0jkc6E9E6mzxGUsVE6t0lUE7YKLQSk-1760107508-1.2.1.1-uh3ng2QBceEPTfcaBBx2g49ooEfiu6DuxIbyR5rKk1zHoi7KD5DBw6Br3TdrSK2nDdmf1BvGa1b7TGyoKEhV4FKW2ANhHcACH9WIq5byhGX.HAOIZ809by1hjvOTrQs7hDdpq6q7ZhnVVl_PodM5Y95tz3t85Ei.N.nAWzKGpG0ps.Hx4jMf00ZPOBb7SzNc1H5yHpEvGJlWW_3sqz_XTstig0p0RNDwM79a7VsD2Is; _holberton_intranet_session=rSn68%2F%2FJQ6k87unjGtIQ46ibPv04F51JcPH0ULIhbh%2B%2FRQX%2FbdXTTEL9y4mb1ciKF3B%2Fmm231HvPrx3dKg5ngMvh%2BjYY4EsAZIGUo3FL9N%2FN33wsIIjFlNIQrPoKoiNeBkLLzkaqcAefN7pIxkVNb1M5XaV…1ksQRnrqNQA%2BVHFeAmSIxLkmttco5CxuDK2ub5Lahnk9sLr4lNnFhuT42pBNHTAA465hM0%3D--FVDOaD5A0y7l%2FMhl--BMmoA8aeal3c1UV3dC2gEg%3D%3D; timezone=0; context_user_curriculum_status_id=eyJfcmFpbHMiOnsibWVzc2FnZSI6Ik9EUXhOelk9IiwiZXhwIjpudWxsLCJwdXIiOiJjb29raWUuY29udGV4dF91c2VyX2N1cnJpY3VsdW1fc3RhdHVzX2lkIn19--5a6a2e4d4edfd2f82b20c6dd4615737db7224712; context_curriculum_id=eyJfcmFpbHMiOnsibWVzc2FnZSI6Ik5UQXkiLCJleHAiOm51bGwsInB1ciI6ImNvb2tpZS5jb250ZXh0X2N1cnJpY3VsdW1faWQifX0%3D--1ed59c35ff7ac051b38dd782822a0b2c30e7b681
+Host
+	intranet.hbtn.io
+
+
+3. Exploring HTTP Methods and Status Codes:
+-------------------------------------------
+
+---> Four Common HTTP methods:
+        HTTP methods define the operation the client wants to perform
+        1. GET - fetch a resource
+        2. POST - post a value on an HTML form
+        3. OPTIONS
+        4. HEAD
+
+---> Five common HTTP status codes:
+    1. 100s - information response
+    2. 200 - OK - Success
+    3. 301 - Moved Permanently - redirection codes
+    4. 404 - Not Found - client errors
+    5. 500 - Internal Server Error  - server errors
+
