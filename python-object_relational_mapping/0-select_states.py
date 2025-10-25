@@ -34,11 +34,11 @@ def list_states(username, password, db_name):
     cursor.close()
     db.close()
 
-    if __name__ == "__main__":
-        # get command line args
-        username = sys.argv[1]
-        password = sys.argv[2]
-        db_name = sys.argv[3]
+if __name__ == "__main__":
+    # get command line args
+    username = sys.argv[1]
+    password = sys.argv[2]
+    db_name = sys.argv[3]
 
     # Call the function to list states
     list_states(username, password, db_name)
