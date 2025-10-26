@@ -13,11 +13,11 @@ if __name__ == "__main__":
                          user=sys.argv[1], 
                          passwd=sys.argv[2], 
                          db=sys.argv[3],
-                         stae_name=sys.argv[4])
+    )
     # create cursor object
     cur = db.cursor()
     # execute the query
-    cur.execute("SELECT * FROM states WHERE name = state_name ORDER BY id ASC")
+    cur.execute("SELECT * FROM states WHERE name = '{}' ORDER BY id ASC".format(sys.argv[4]))
     # fecth all rows
     rows = cur.fetchall()
     # print the results
