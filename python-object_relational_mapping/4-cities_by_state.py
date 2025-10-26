@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Script that lists all cities from the database hbtn_0e_0_usa
+Script that lists all cities from the database hbtn_0e_4_usa
 """
 
 import MySQLdb
@@ -13,7 +13,7 @@ if __name__ == "__main__":
     # create cursor object
     cur = db.cursor()
     # execute the query *with parameterized input*
-    cur.execute("SELECT * FROM cities ORDER BY id ASC")
+    cur.execute("SELECT cities.id, cities.name, states.name FROM cities JOIN states ON cities.state_id = states.id ORDER by cities.id ASC")
     # fecth all rows
     rows = cur.fetchall()
     # print the results
