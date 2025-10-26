@@ -14,7 +14,7 @@ if __name__ == "__main__":
     # create cursor object
     cur = db.cursor()
     # execute the query *with parameterized input*
-    cur.execute("SELECT * FROM states WHERE name = %s", (sys.argv[4],))
+    cur.execute("SELECT * FROM states WHERE name = %s ORDER BY id ASC", (sys.argv[4],))
     # fecth all rows
     rows = cur.fetchall()
     # print the results
