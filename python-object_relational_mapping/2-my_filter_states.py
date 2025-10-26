@@ -4,7 +4,7 @@ Script that lists all states from the database hbtn_0e_0_usa, where
 name matches the argument
 """
 
-impore MySQLdb
+import MySQLdb
 import sys
 
 if __name__ == "__main__":
