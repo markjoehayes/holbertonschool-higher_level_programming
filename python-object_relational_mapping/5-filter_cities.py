@@ -15,6 +15,6 @@ if __name__ == "__main__":
     """, (sys.argv[4],))
     rows = cur.fetchall()
     for row in rows:
-        print(row)
+        print(row[0])
     cur.close()
     db.close()
