@@ -13,7 +13,7 @@ if __name__ == "__main__":
     # create cursor object
     cur = db.cursor()
     # execute the query *with parameterized input*
-    cur.execute("SELECT * FROM cities ORDER BY id ASC"
+    cur.execute("SELECT * FROM cities ORDER BY id ASC")
     # fecth all rows
     rows = cur.fetchall()
     # print the results
