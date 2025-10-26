@@ -13,8 +13,8 @@ if __name__ == "__main__":
                          user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
     # create cursor object
     cur = db.cursor()
-    # execute the query
-    cur.execute("SELECT * FROM states WHERE name = BINARY '{}'".format(sys.argv[4]))
+    # execute the query *with parameterized input*
+    cur.execute("SELECT * FROM states WHERE name = %s", (sys.argv[4]))
     # fecth all rows
     rows = cur.fetchall()
     # print the results
