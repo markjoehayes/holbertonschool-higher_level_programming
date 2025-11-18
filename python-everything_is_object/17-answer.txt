@@ -1,1 +1,15 @@
 [1,2,3,4]
+
+>>> def increment(n):
+...     n.append(4)
+... 
+>>> l = [1,2,3]
+>>> increnent(l)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'increnent' is not defined. Did you mean: 'increment'?
+>>> increment(l)
+>>> l
+[1, 2, 3, 4]
+>>> 
+
